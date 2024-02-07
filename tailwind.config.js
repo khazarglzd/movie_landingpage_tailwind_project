@@ -21,6 +21,9 @@ module.exports = {
         'movielio-grey': '#DDDDDD',
         'movielio-white': '#F7F7F7',
       },
+      spacing: {
+        128: '32rem',
+      },
     },
   },
   plugins: [],
