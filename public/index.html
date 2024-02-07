@@ -22,11 +22,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-family font-gemunu">
+  <body>
     <!--Header Section-->
-    <header
-      class="dark:bg-black bg-white py-6 lg:py-12 dark:text-movielio-grey text-black uppercase"
-    >
+    <header class="bg-black py-6 lg:py-12 text-movielio-grey uppercase">
       <!--Header Container-->
       <div
         class="container flex items-center justify-between space-x-8 lg:space-x-16"
@@ -34,15 +32,23 @@
         <!--Logo-->
         <a
           href="#"
-          class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-b bg-clip-text from-movielio-red to-movielio-grey"
+          class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-movielio-red to-movielio-grey"
           >MOVIELIO</a
         >
+
+        <!--Mobile Menu-->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-movielio-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-movielio-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-movielio-grey w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
         <!--Navigation-->
         <nav class="hidden md:flex justify-between flex-1">
           <!--Menu-->
-          <div
-            class="flex items-center cursor-pointer lg:text-lg space-x-4 lg:space-x-8"
-          >
+          <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
             <a
               href="#"
               class="hover:text-movielio-melon transition duration-500"
@@ -73,14 +79,16 @@
           <div class="flex items-center space-x-4 lg:space-x-8">
             <!--Search Area-->
             <form>
-              <div class="group border-r px-4 mx-4 py-1 border-movielio-red">
+              <div
+                class="hidden md:flex group border-r px-4 mx-4 py-1 border-movielio-red"
+              >
                 <input
                   type="text"
                   class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-movielio-red focus:outline-none w-24 lg:w-44 transition duration-500"
                 />
                 <button class="-ml-4 group-hover:ml-0 transition duration-500">
                   <i
-                    class="fas fa-search group-hover:text-movielio-red transition duration-300"
+                    class="fas fa-search group-hover:text-movielio-red transition duration-500"
                   ></i>
                 </button>
               </div>
@@ -90,7 +98,7 @@
               <a href="#">Login</a>
               <a
                 href="#"
-                class="bg-movielio-red px-3 py-1 hover:bg-rose-600 hover:text-movielio-grey transition duration-500 whitespace-nowrap"
+                class="bg-movielio-red px-3 py-1 hover:bg-rose-600 hover:text-movielio-grey cursor-pointer transition duration-500 whitespace-nowrap"
                 >Sign Up</a
               >
             </div>
